@@ -19,6 +19,7 @@
   --secondary-bkg-color: #2F303A;
   --bordering-color: #ECECEC;
   --hero-gradient-color: rgba(47, 48, 58, 0.4);
+  --clients-border-color: #AFB1B8;
   
 }
 
@@ -120,7 +121,7 @@ body {
 .cont-nav .link:hover,  /*контакти у хедері*/
 .cont-nav .link:focus,   
 .footer-adr-list .link:hover,   /*контакти у футері*/
-.footer-adr-list .link:focus{
+.footer-adr-list .link:focus,{
     color: var(--accent-color);
 }
 
@@ -362,6 +363,30 @@ body {
     color: var(--secondary-text-color);
 }
 
+
+/* стилі для постійних клієнтів */
+.clients-list{
+    display: flex;
+}
+.clients-list .link:hover,
+.clients-list .link:focus{
+    fill: var(--accent-color);
+
+
+}
+
+.clients-list .link{
+    padding: 16px 32px;
+    border: 1px solid var(--clients-border-color);
+    border-radius: 4px; 
+}
+
+
+.clients-list .item + .item{
+    margin-left: 30px;
+}
+
+.clients-list .item
 
 /* Cтилі для сторінки портфоліо */
 
