@@ -391,7 +391,7 @@ body {
     border-radius: 4px;
     color: var(--clients-border-color);
 }
-.company-link:hover
+.company-link:hover,
 .company-link:focus{
     color: var(--accent-color);
     border-color: var(--accent-color);
