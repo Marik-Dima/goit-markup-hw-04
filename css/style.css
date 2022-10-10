@@ -141,7 +141,7 @@ body {
 }
 .cont-nav .item{
     display: flex;
-    color: var(--clients-border-color);
+    color: var(--secondary-text-color);
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -176,7 +176,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
 }
 
 
