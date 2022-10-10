@@ -146,7 +146,8 @@ body {
     padding-bottom: 32px;
 }
 
-.cont-nav .item:hover{
+.cont-nav .item:hover,
+.cont-nav .item:focus{
     color: var(--accent-color);
 }
 
@@ -353,7 +354,8 @@ body {
     padding: 12px;
     color: var(--clients-border-color);
 }
-.social-area:hover{
+.social-area:hover,
+.social-area:focus{
     border-radius: 50%;
     background-color: var(--accent-color);
     color: var(--primary-white-color);
@@ -389,7 +391,8 @@ body {
     border-radius: 4px;
     color: var(--clients-border-color);
 }
-.company-link:hover{
+.company-link:hover
+.company-link:focus{
     color: var(--accent-color);
     border-color: var(--accent-color);
 }
@@ -551,12 +554,15 @@ body {
 .footer-adr-list .item + .item{
     margin-top: 9px;
 }
-.join-us{
+
+
+/* блок приєднуйся до соцмереж у футтері */
+/* позиціювання контенту в блоці приєднуйтесь */
+.join-us {
     padding-top: 12px;
     padding-left: 70px;
-
 }
-
+/* заголовок */
 .join-us .title{
     text-transform: uppercase;
     color: var(--primary-white-color);
@@ -567,13 +573,12 @@ body {
     line-height: 16px;
     letter-spacing: 0.03em;
 }
-
-
-
+/* іконки соц мереж у футері */
+/* чистимо список соц мереж від попередньо встановлених паддінгів */
 .join-us .social-links{
     padding: 0;
 }
-
+/* встановлюємо атрибути для посилання */
 .join-us .social-area {
     width: 44px;
     height: 44px;
@@ -583,8 +588,9 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50% ;
 }
-
-.social-area:hover {
+/* ховер та фокус */
+.social-area:hover,
+.social-area:focus{
     border-radius: 50%;
     background-color: var(--accent-color);
     color: var(--primary-white-color);
