@@ -99,7 +99,6 @@ body {
 .nav{
     display: flex;
     align-items: center;
-    
 }
 
 .site-nav .item + .item{
@@ -110,7 +109,6 @@ body {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-
     color: var(--primary-text-color);
     text-decoration: none;
 }
@@ -119,7 +117,9 @@ body {
 .site-nav .link:hover,  /* меню навігації ухедері */
 .site-nav .link:focus,   
 .footer-adr-list .link:hover,   /*контакти у футері*/
-.footer-adr-list .link:focus{
+.footer-adr-list .link:focus,
+.cont-nav .link:hover,
+.cont-nav .link:focus{
     color: var(--accent-color);
 }
 
@@ -135,20 +135,16 @@ body {
     flex-direction: row;
 }
 .cont-nav .link{
-    display: block;
+    display: flex;
+    align-items: center;
     color: currentColor;   
     text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .cont-nav .item{
     display: flex;
     color: var(--secondary-text-color);
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-
-.cont-nav .item:hover,
-.cont-nav .item:focus{
-    color: var(--accent-color);
 }
 
 .cont-nav .item+.item{
@@ -193,7 +189,6 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-   
 }
 /* кнопка */
 .button{
@@ -249,7 +244,11 @@ body {
 
 
 .instruments .area{
-    display: block;
+    display: flex;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
     background-color: var(--calm-button-bg-color);
     border-radius: 4px;
     margin-bottom: 30px;
@@ -350,8 +349,9 @@ body {
 .social-area{
     width: 44px;
     height: 44px;
-    display: block;
-    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--clients-border-color);
 }
 .social-area:hover,
@@ -385,8 +385,11 @@ body {
 }
 
 .company-link{
-    display: block;
-    padding: 16px 32px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
     border: 1px solid var(--clients-border-color);
     border-radius: 4px;
     color: var(--clients-border-color);
@@ -582,8 +585,9 @@ body {
 .join-us .social-area {
     width: 44px;
     height: 44px;
-    display: block;
-    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--primary-white-color);
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50% ;
